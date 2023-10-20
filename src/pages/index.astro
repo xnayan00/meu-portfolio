@@ -1,16 +1,50 @@
 ---
-
+import BaseLayout from '../layout/BaseLayout.astro'
+//@ts-ignore
+import BehanceIcon from '../icons/Behance.astro'
+//@ts-ignore
+import GithubIcon from '../icons/Github.astro'
+//@ts-ignore
+import LinkedinIcon from '../icons/Linkedin.astro'
+import HeaderNavigation from '../layout/HeaderNavigation.astro';
+//@ts-ignore
+import ProjectsTabs from '../components/tabs/ProjectsTabs.vue';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<BaseLayout>
+	<main class="wrapper">
+		<section class="container hero">
+			<div class="hero__social">
+				<button class="social-button">
+					<LinkedinIcon />
+				</button>
+				<button class="social-button">
+					<GithubIcon />
+				</button>
+				<button class="social-button">
+					<BehanceIcon />
+				</button>
+			</div>
+			<figure class="hero__image">
+				<img src="../src/assets/hero-img.png" alt="Foto Yan Mendes">
+			</figure>
+			<div class="hero__content">
+				<h2 class="hero__subtitle">Olá, eu sou</h2>
+				<h1 class="hero__title">Yan mendes</h1>
+			</div>
+		</section>
+
+		<HeaderNavigation />
+
+		<div class="spacer" />
+
+		<section class="programming">
+			<div class="title">
+				<span>Programação</span>
+				<h2>Programação</h2>
+			</div>
+
+			<ProjectsTabs client:idle />
+		</section>
+	</main>
+</BaseLayout>
