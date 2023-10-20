@@ -1,17 +1,25 @@
 <script setup>
 import { ref } from 'vue'
+import htmlIcon from '/src/icons/html.vue'
+import cssIcon from '/src/icons/css.vue'
+import javascriptIcon from '/src/icons/javascript.vue'
+import sassIcon from '/src/icons/sass.vue'
+import vueIcon from '/src/icons/vueicon.vue'
+import vuexIcon from '/src/icons/vuex.vue'
+import quasarIcon from '/src/icons/quasar.vue'
+import nodeIcon from '/src/icons/node.vue'
+import mongoIcon from '/src/icons/mongo.vue'
 
 const items = ref([
-    { title: 'HTML', src: '/src/assets/svg-icons/html.svg', alt: 'Ícone do HTML5' },
-    { title: 'CSS', src: '/src/assets/svg-icons/css.svg', alt: 'Ícone do CSS3' },
-    { title: 'JavaScript', src: '/src/assets/svg-icons/javascript.svg', alt: 'Ícone do JavaScript' },
-    { title: 'SASS', src: '/src/assets/svg-icons/sass.svg', alt: 'Ícone do SASS' },
-    { title: 'Vue', src: '/src/assets/svg-icons/vue.svg', alt: 'Ícone do Vue' },
-    { title: 'Vuetify', src: '/src/assets/svg-icons/vuetify.svg', alt: 'Ícone do Vuetify' },
-    { title: 'Vuex', src: '/src/assets/svg-icons/vuex.svg', alt: 'Ícone do Vuex' },
-    { title: 'PHP', src: '/src/assets/svg-icons/php.svg', alt: 'Ícone do PHP' },
-    { title: 'Laravel', src: '/src/assets/svg-icons/laravel.svg', alt: 'Ícone do Laravel' },
-    { title: 'Mysql', src: '/src/assets/svg-icons/mysql.svg', alt: 'Ícone do Mysql' },
+    { title: 'HTML', src: htmlIcon, alt: 'Ícone do HTML5' },
+    { title: 'CSS', src: cssIcon, alt: 'Ícone do CSS3' },
+    { title: 'JavaScript', src: javascriptIcon, alt: 'Ícone do JavaScript' },
+    { title: 'SASS', src: sassIcon, alt: 'Ícone do SASS' },
+    { title: 'Vue', src: vueIcon, alt: 'Ícone do Vue' },
+    { title: 'Quasar Framework', src: quasarIcon, alt: 'Ícone do Quasar Framework' },
+    { title: 'Vuex', src: vuexIcon, alt: 'Ícone do Vuex' },
+    { title: 'Node', src: nodeIcon, alt: 'Ícone do Node' },
+    { title: 'Mongo DB', src: mongoIcon, alt: 'Ícone do Mongo DB' },
 ])
 </script>
 
@@ -37,7 +45,7 @@ const items = ref([
                     v-for="(item, idx) in items"
                     :key="idx"
                 >
-                    <img :src="item.src" :alt="item.alt">
+                    <component :is="item.src" />
                     <span>{{ item.title }}</span>
                 </li>
             </ul>

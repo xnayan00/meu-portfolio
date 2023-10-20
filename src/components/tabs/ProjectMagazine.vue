@@ -1,17 +1,27 @@
 <script setup>
 import { ref } from 'vue'
+import htmlIcon from '/src/icons/html.vue'
+import cssIcon from '/src/icons/css.vue'
+import javascriptIcon from '/src/icons/javascript.vue'
+import sassIcon from '/src/icons/sass.vue'
+import vueIcon from '/src/icons/vueicon.vue'
+import vuetifyIcon from '/src/icons/vuetify.vue'
+import vuexIcon from '/src/icons/vuex.vue'
+import phpIcon from '/src/icons/php.vue'
+import laravelIcon from '/src/icons/laravel.vue'
+import mysqlIcon from '/src/icons/mysql.vue'
 
 const items = ref([
-    { title: 'HTML', src: '/src/assets/svg-icons/html.svg', alt: 'Ícone do HTML5' },
-    { title: 'CSS', src: '/src/assets/svg-icons/css.svg', alt: 'Ícone do CSS3' },
-    { title: 'JavaScript', src: '/src/assets/svg-icons/javascript.svg', alt: 'Ícone do JavaScript' },
-    { title: 'SASS', src: '/src/assets/svg-icons/sass.svg', alt: 'Ícone do SASS' },
-    { title: 'Vue', src: '/src/assets/svg-icons/vue.svg', alt: 'Ícone do Vue' },
-    { title: 'Vuetify', src: '/src/assets/svg-icons/vuetify.svg', alt: 'Ícone do Vuetify' },
-    { title: 'Vuex', src: '/src/assets/svg-icons/vuex.svg', alt: 'Ícone do Vuex' },
-    { title: 'PHP', src: '/src/assets/svg-icons/php.svg', alt: 'Ícone do PHP' },
-    { title: 'Laravel', src: '/src/assets/svg-icons/laravel.svg', alt: 'Ícone do Laravel' },
-    { title: 'Mysql', src: '/src/assets/svg-icons/mysql.svg', alt: 'Ícone do Mysql' },
+    { title: 'HTML', src: htmlIcon, alt: 'Ícone do HTML5' },
+    { title: 'CSS', src: cssIcon, alt: 'Ícone do CSS3' },
+    { title: 'JavaScript', src: javascriptIcon, alt: 'Ícone do JavaScript' },
+    { title: 'SASS', src: sassIcon, alt: 'Ícone do SASS' },
+    { title: 'Vue', src: vueIcon, alt: 'Ícone do Vue' },
+    { title: 'Vuetify', src: vuetifyIcon, alt: 'Ícone do Vuetify' },
+    { title: 'Vuex', src: vuexIcon, alt: 'Ícone do Vuex' },
+    { title: 'PHP', src: phpIcon, alt: 'Ícone do PHP' },
+    { title: 'Laravel', src: laravelIcon, alt: 'Ícone do Laravel' },
+    { title: 'Mysql', src: mysqlIcon, alt: 'Ícone do Mysql' },
 ])
 </script>
 
@@ -25,7 +35,7 @@ const items = ref([
         </div>
         <div class="project__image">
             <figure>
-                <img style="color: red" src="/src/assets/projects/magazine1.png" width="100%" alt="Imagem do projeto Magazine Brindes">
+                <img src="/src/assets/projects/magazine1.png" width="100%" alt="Imagem do projeto Magazine Brindes">
             </figure>
         </div>
         <div class="project__footer">
@@ -36,7 +46,7 @@ const items = ref([
                     v-for="(item, idx) in items"
                     :key="idx"
                 >
-                    <img :src="item.src" :alt="item.alt">
+                    <component :is="item.src" />
                     <span>{{ item.title }}</span>
                 </li>
             </ul>
