@@ -1,0 +1,21 @@
+body {
+    background-color: var(--gray);
+    color: var(--gray-700);
+}
+
+.container {
+    max-width: 1060px;
+    margin: auto;
+}
+
+.wrapper {
+    padding-top: 140px;
+}
+
+.spacer {
+    margin: 250px 0;
+}
+
+svg.svgColor {
+    color: var(--gray-700);
+}

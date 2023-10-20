@@ -1,0 +1,45 @@
+:root {
+    --gray: #FAFAFF;
+    --gray-100: #EEF0F2;
+    --gray-200: #ECEBE4;
+    --gray-300: #DADDD8;
+    --gray-400: #BBBBBB;
+    --gray-500: #484848;
+    --gray-600: #232323;
+    --gray-700: #1C1C1C;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --gray-700: #FAFAFF;
+        --gray-600: #EEF0F2;
+        --gray-500: #ECEBE4;
+        --gray-400: #DADDD8;
+        --gray-300: #BBBBBB;
+        --gray-200: #484848;
+        --gray-100: #232323;
+        --gray: #1C1C1C;
+    }
+}
+
+body[data-theme="light"] {
+    --gray: #FAFAFF;
+    --gray-100: #EEF0F2;
+    --gray-200: #ECEBE4;
+    --gray-300: #DADDD8;
+    --gray-400: #BBBBBB;
+    --gray-500: #484848;
+    --gray-600: #232323;
+    --gray-700: #1C1C1C;
+}
+
+body[data-theme="dark"] {
+    --gray-700: #FAFAFF;
+    --gray-600: #EEF0F2;
+    --gray-500: #ECEBE4;
+    --gray-400: #DADDD8;
+    --gray-300: #BBBBBB;
+    --gray-200: #484848;
+    --gray-100: #232323;
+    --gray: #1C1C1C;
+}

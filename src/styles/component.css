@@ -1,0 +1,130 @@
+.logo {
+    font-family: "Archivo Black";
+    text-transform: uppercase;
+    padding: 0 3rem;
+}
+.social-button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.icon-link {
+    cursor: pointer;
+}
+.title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title span {
+    font-family: "Archivo Black";
+    font-size: 100px;
+    position: absolute;
+    color: var(--gray-700);
+    opacity: 4%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title h2 {
+    font-family: "Archivo Black";
+    font-size: 2rem;
+    letter-spacing: 12.8px;
+    text-align: center;
+    color: var(--gray-700);
+    text-transform: uppercase;
+    z-index: 1;
+}
+
+/**********************************
+    Hero section component
+*********************************/
+.hero {
+    height: 12rem;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 20px;
+    gap: 400px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--gray-100);
+}
+.hero__image {
+    position: absolute;
+    top: -90px;
+    z-index: 1;
+}
+.hero__content {
+    flex-grow: 1;
+}
+.hero__content :where(h1, h2) {
+    line-height: 24px;
+}
+.hero__title {
+    font-family: "Archivo Black";
+    font-size: 70px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--gray-700);
+}
+.hero__subtitle {
+    font-family: "Archivo Black";
+    font-size: 64px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: var(--gray-700);
+}
+.hero__social {
+    display: flex;
+    flex-direction: column;
+}
+
+/**********************************
+    Header navigation component
+*********************************/
+.header {
+    position: sticky;
+    top: 0.8rem;
+}
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    list-style: none;
+}
+.header__menu__item a {
+    font-family: "Archivo";
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: var(--gray-700);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+/**********************************
+    Tabs
+*********************************/
+.tabs {
+    display: flex;
+    gap: 20px;
+}
+.tabs__item {
+    flex-grow: 1;
+    text-align: center;
+    padding: 20px 0;
+    cursor: pointer;
+    border: 1px solid var(--gray-300);
+    color: var(--gray-300);
+}
+.tabs__item--active {
+    color: var(--gray-700);
+}
