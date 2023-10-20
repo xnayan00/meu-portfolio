@@ -20,6 +20,15 @@
         --gray-100: #232323;
         --gray: #1C1C1C;
     }
+    .skills-section {
+        background-color: var(--gray-100);
+    }
+    .skills {
+        color: var(--gray-700);
+    }
+    .title--light :is(h2, span) {
+        color: var(--gray-700);
+    }
 }
 
 body[data-theme="light"] {
@@ -42,4 +51,16 @@ body[data-theme="dark"] {
     --gray-200: #484848;
     --gray-100: #232323;
     --gray: #1C1C1C;
+}
+
+body[data-theme="dark"] .skills-section {
+    background-color: var(--gray-100);
+}
+
+body[data-theme="dark"] .skills {
+    color: var(--gray-700);
+}
+
+body[data-theme="dark"] .title--light :is(h2, span) {
+    color: var(--gray-700);
 }
