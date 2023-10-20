@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descrição da página home">
+    <meta name="keywords" content="Yan Mendes, Programador, Designer">
+    <link rel="stylesheet" href="./src/styles/main.css">
+    <title>Yan Mendes - Programador & Designer</title>
+</head>
+<body data-theme="default">
+    <slot />
+</body>
+
+<script>
+        const body = document.body
+        
+        function prefersMatch(){
+            if(window.matchMedia("(prefers-color-scheme: dark)").matches){
+                body.setAttribute('data-theme', 'light')
+            }else if(window.matchMedia("(prefers-color-scheme: light)").matches){
+                body.setAttribute('data-theme', 'dark')
+            }
+        }
+
+        function toggleTheme(){            
+            if(body.getAttribute('data-theme') === 'light'){
+                body.setAttribute('data-theme', 'dark')
+            }else if(body.getAttribute('data-theme') === 'dark'){
+                body.setAttribute('data-theme', 'light')
+            }else{
+                prefersMatch()
+            }
+        }
+
+		document.getElementById("themeButton").addEventListener('click', toggleTheme)
+</script>
+
+</html>
