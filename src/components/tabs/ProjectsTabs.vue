@@ -4,7 +4,7 @@ import ProjectSintese from './ProjectSintese.vue'
 import ProjectMagazine from './ProjectMagazine.vue'
 import ProjectSamulife from './ProjectSamulife.vue'
 
-var currentTab = ref(2)
+var currentTab = ref(1)
 const tabs = ref([
     { id: 1, title: 'Síntese' },
     { id: 2, title: 'Magazine' },
