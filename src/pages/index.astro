@@ -9,9 +9,13 @@ import LinkedinIcon from '../icons/Linkedin.astro'
 import HeaderNavigation from '../layout/HeaderNavigation.astro';
 //@ts-ignore
 import ProjectsTabs from '../components/tabs/ProjectsTabs.vue';
+//@ts-ignore
+import DesignProjects from '../components/DesignProjects.astro'
+//@ts-ignore
+import Skills from '../components/Skills.astro'
 ---
 
-<BaseLayout>
+<BaseLayout title="Yan Mendes bla bla bla" keywords="Alguma keyword">
 	<main class="wrapper">
 		<section class="container hero">
 			<div class="hero__social">
@@ -36,15 +40,41 @@ import ProjectsTabs from '../components/tabs/ProjectsTabs.vue';
 
 		<HeaderNavigation />
 
-		<div class="spacer" />
-
-		<section class="programming">
+		<div class="spacer-250" />
+		
+		<section class="programming-section">
 			<div class="title">
 				<span>Programação</span>
 				<h2>Programação</h2>
 			</div>
-
+			
 			<ProjectsTabs client:idle />
+		</section>
+
+		<div class="spacer-120" />
+		
+		<section class="design-section">
+			<div class="title">
+				<span>Design</span>
+				<h2>Design</h2>
+			</div>
+
+			<div class="spacer-60" />
+			
+			<DesignProjects />
+		</section>
+
+		<div class="spacer-120" />
+		
+		<section class="skills-section">
+			<div class="title title--light title--spaced">
+				<span>Skills</span>
+				<h2>Skills</h2>
+			</div>
+						
+			<div class="spacer-60" />
+
+			<Skills />
 		</section>
 	</main>
 </BaseLayout>
