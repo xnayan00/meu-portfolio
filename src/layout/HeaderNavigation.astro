@@ -1,0 +1,42 @@
+---
+//@ts-ignore
+import DarkLightIcon from '../icons/DarkLight.astro'
+//@ts-ignore
+import ENlanguageIcon from '../icons/ENlanguage.astro'
+//@ts-ignore
+import PTlanguageIcon from '../icons/PTlanguage.astro'
+
+const menuItems = [
+    { name: 'Programação', route: '#programacao' },
+    { name: 'Design', route: '#design' },
+    { name: 'Skills', route: '#skills' },
+    { name: 'Experiências', route: '#experiencias' },
+    { name: 'Contato', route: '#contato' },
+]
+---
+
+<header class="container header">
+    <nav class="header__nav">
+        <figure>
+            <strong class="logo">Yan Mendes</strong>
+        </figure>
+        <ul class="header__menu">
+            {menuItems.map(item => (
+                <li class="header__menu__item">
+                    <a href={item.route}>{item.name}</a>
+                </li>
+            ))}
+            <li>
+                <a id="themeButton" role="button" class="icon-link">
+                    <DarkLightIcon />
+                </a>
+            </li>
+            <li>
+                <a id="languageButton" role="button" class="icon-link">
+                    <ENlanguageIcon />
+                    <!-- <PTlanguageIcon /> -->
+                </a>
+            </li>
+        </ul>
+    </nav>
+</header>
