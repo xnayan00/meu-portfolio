@@ -1,0 +1,70 @@
+---
+const skills = [
+    {
+        title: 'Frontend',
+        items: [
+            'HTML',
+            'CSS',
+            'JavaScript',
+            'Typescript',
+            'Cypress',
+            'SASS',
+            'Bootstrap',
+            'Material UI',
+            'Quasar Framework',
+            'Vue | Vuex | Pínia',
+            'React | Redux',
+            'Svelte',
+            'Astro'
+        ] 
+    },
+    {
+        title: 'Backend',
+        items: [
+            'Nodejs',
+            'Bun',
+            'Elysia',
+            'Express',
+            'Mongo DB',
+            'Mongoose'
+        ]
+    },
+    {
+        title: 'Design',
+        items: [
+            'Figma',
+            'Wordpress',
+            'Elementor',
+            'Photoshop',
+            'Illustrator',
+            'Inkscape',
+            'Gimp',
+            'Canva'
+        ]
+    },
+    {
+        title: 'Arquitetura',
+        items: [
+            'HTML semântico',
+            'SMACSS',
+            'BEMCSS',
+            'Design Atômico',
+            'SOLID',
+            'MVC'
+        ]
+    },
+]
+---
+
+<article class="container skills">
+    {skills.map(skill => (
+        <div class="skills__column">
+            <h5 class="skills__title">{skill.title}</h5>
+            <ul class="skills__list">
+                {skill.items.map(item => (
+                    <li class="skills__item">{item}</li>
+                ))}
+            </ul>
+        </div>
+    ))}
+</article>
