@@ -34,7 +34,26 @@ const toggleTab = (value) => {
             </div>
         </div>
         <div class="tabs__content">
-            <component :is="projects[currentTab - 1]" />
+            <Transition name="slide-fade" mode="out-in">
+                <component :is="projects[currentTab - 1]" />
+            </Transition>
         </div>
     </article>
 </template>
+
+<style scoped>
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease-out;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.3s ease-in;
+}
+
+.slide-fade-enter-from,
+.slide-fade-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+</style>
