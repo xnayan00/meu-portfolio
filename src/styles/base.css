@@ -18,6 +18,7 @@ body {
     font-family: "Archivo Black";
     text-transform: uppercase;
     padding: 0 5rem;
+    transition: all .1s;
 }
 .social-button {
     border: none;
