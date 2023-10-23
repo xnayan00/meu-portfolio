@@ -1,0 +1,37 @@
+.design {
+    display: grid;
+    column-gap: 20px;
+    row-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+}
+.design__card {
+    height: 200px;
+    cursor: pointer;
+}
+.design :first-child {
+    background-image: url('/src/assets/click-delivery.png');
+    background-size: cover;
+    filter: grayscale(1);
+    background-position: center;
+}
+.design :nth-child(2) {
+    background-image: url('/src/assets/wander-hub.png');
+    background-size: cover;
+    filter: grayscale(1);
+    background-position: center;
+}
+.design :nth-child(3) {
+    background-image: url('/src/assets/fatal-beach.png');
+    background-size: cover;
+    filter: grayscale(1);
+    background-position: center;
+}
+.design :nth-child(4) {
+    background-image: url('/src/assets/quintal-lanches.jpg');
+    background-size: cover;
+    filter: grayscale(1);
+    background-position: center;
+}
+.design :nth-child(n):hover {
+    filter: grayscale(0);
+}

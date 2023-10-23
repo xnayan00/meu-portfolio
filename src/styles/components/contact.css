@@ -1,0 +1,65 @@
+.contact {
+    display: flex;
+    justify-content: center;
+}
+.contact-card {
+    display: inline-flex;
+    gap: 20px;
+    align-items: center;
+    background: var(--gray-100);
+    padding: 10px 20px;
+}
+.contact__image {
+    background-image: url('/src/assets/contact-card-img.png');
+    background-size: cover;
+    background-position: center;
+    height: 124px;
+    width: 124px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+.contact__info {
+    display: flex;
+    height: 80%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.info__text, .info__contact {
+    display: flex;
+    flex-direction: column;
+}
+.contect__socials {
+    display: flex;
+    flex-direction: column;
+}
+.contact__title {
+    font-family: "Archivo";
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    color: var(--gray-700);
+}
+.contact__subtitle {
+    color: var(--gray-400);
+    font-size: 14px;
+    max-width: 70%;
+}
+.contact__number {
+    font-family: "Archivo";
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+    color: var(--gray-700);
+    text-decoration: none;
+}
+.contact__email {
+    color: var(--gray-700);
+    font-size: 1rem;
+    text-decoration: none;
+    position: relative;
+}
+:is(.contact__number, .contact__email):hover {
+    color: var(--gray-400);
+}

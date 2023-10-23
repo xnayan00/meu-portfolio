@@ -1,0 +1,61 @@
+.experiences {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+.card {
+    padding: 2px;
+    background: linear-gradient(0deg, transparent, var(--gray-300));
+}
+.card__border {
+    background-color: var(--gray);
+    padding: 18px;
+}
+.card__header {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+.card__title {
+    font-family: "Archivo";
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--gray-700);
+    text-transform: uppercase;
+}
+.card__subtitle {
+    font-family: "Archivo";
+    font-size: 1rem;
+    color: var(--gray-700);
+}
+.card__caption {
+    font-family: "Archivo";
+    color: var(--gray-400);
+    font-weight: 600;
+}
+.card__content {
+    margin-bottom: 60px;
+}
+.card__text {
+    font-family: "Archivo";
+    font-weight: 400;
+    font-size: 1rem;
+    color: var(--gray-700);
+    line-height: 1.3rem;
+}
+.card__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.list__item {
+    background-color: var(--gray-100);
+    padding: 5px 20px;
+    font-size: 14px;
+    font-family: "Archivo";
+    font-weight: 600;
+    text-transform: uppercase;
+}

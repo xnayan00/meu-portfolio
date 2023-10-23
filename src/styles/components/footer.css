@@ -1,0 +1,14 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+.footer__name {
+    font-family: "Archivo";
+    color: var(--gray-700);
+}
+.footer__caption {
+    font-family: "Archivo";
+    color: var(--gray-700);
+    font-style: oblique;
+}

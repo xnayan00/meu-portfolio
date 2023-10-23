@@ -1,0 +1,32 @@
+.title {
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.title span {
+    font-family: "Archivo Black";
+    font-size: 100px;
+    position: absolute;
+    color: var(--gray-700);
+    opacity: 4%;
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+}
+.title h2 {
+    font-family: "Archivo Black";
+    font-size: 2rem;
+    letter-spacing: 12.8px;
+    text-align: center;
+    color: var(--gray-700);
+    text-transform: uppercase;
+    z-index: 1;
+}
+.title--light :is(h2, span) {
+    color: var(--gray);
+}
+.title--spaced {
+    top: 60px;
+}
