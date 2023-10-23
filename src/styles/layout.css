@@ -31,3 +31,9 @@ body {
 svg.svgColor {
     color: var(--gray-700);
 }
+
+@media screen and (max-width: 860px) {
+    .wrapper {
+        padding-top: 30px;
+    }
+}
