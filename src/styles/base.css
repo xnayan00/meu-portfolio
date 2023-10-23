@@ -10,4 +10,21 @@ body {
 * {
     box-sizing: border-box;
     transition: all .3s;
+    scroll-margin: 60px;
+    scroll-behavior: smooth;
+}
+
+.logo {
+    font-family: "Archivo Black";
+    text-transform: uppercase;
+    padding: 0 3rem;
+}
+.social-button {
+    border: none;
+    outline: none;
+    background: none;
+    cursor: pointer;
+}
+.icon-link {
+    cursor: pointer;
 }
