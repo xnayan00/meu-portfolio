@@ -49,4 +49,14 @@ const menuItems = [
             <MenuIcon />
         </div>
     </nav>
+
+    <nav class="drawer">
+        <ul class="drawer__menu">
+            {menuItems.map(item => (
+                <li class="drawer__menu__item">
+                    <a href={item.route}>{item.name}</a>
+                </li>
+            ))}
+        </ul>
+    </nav>
 </header>
