@@ -13,21 +13,25 @@ import ProjectsTabs from '../components/tabs/ProjectsTabs.vue';
 import DesignProjects from '../components/DesignProjects.astro'
 //@ts-ignore
 import Skills from '../components/Skills.astro'
+//@ts-ignore
+import Experiences from '../components/Experiences.astro'
+//@ts-ignore
+import ContactCard from '../components/ContactCard.astro'
 ---
 
-<BaseLayout title="Yan Mendes bla bla bla" keywords="Alguma keyword">
+<BaseLayout>
 	<main class="wrapper">
 		<section class="container hero">
 			<div class="hero__social">
-				<button class="social-button">
+				<a href="https://www.linkedin.com/in/yan-mendes-47903619b/" target="_blank" class="social-button">
 					<LinkedinIcon />
-				</button>
-				<button class="social-button">
+				</a>
+				<a href="https://github.com/xnayan00" target="_blank" class="social-button">
 					<GithubIcon />
-				</button>
-				<button class="social-button">
+				</a>
+				<a href="https://www.behance.net/yan_mendes" target="_blank" class="social-button">
 					<BehanceIcon />
-				</button>
+				</a>
 			</div>
 			<figure class="hero__image">
 				<img src="../src/assets/hero-img.png" alt="Foto Yan Mendes">
@@ -43,7 +47,7 @@ import Skills from '../components/Skills.astro'
 		<div class="spacer-250" />
 		
 		<section class="programming-section">
-			<div class="title">
+			<div id="programacao" class="title">
 				<span>Programação</span>
 				<h2>Programação</h2>
 			</div>
@@ -54,7 +58,7 @@ import Skills from '../components/Skills.astro'
 		<div class="spacer-120" />
 		
 		<section class="design-section">
-			<div class="title">
+			<div id="design" class="title">
 				<span>Design</span>
 				<h2>Design</h2>
 			</div>
@@ -67,14 +71,47 @@ import Skills from '../components/Skills.astro'
 		<div class="spacer-120" />
 		
 		<section class="skills-section">
-			<div class="title title--light title--spaced">
+			<div id="skills" class="title title--light title--spaced">
 				<span>Skills</span>
 				<h2>Skills</h2>
 			</div>
-						
+			
 			<div class="spacer-60" />
-
+			
 			<Skills />
 		</section>
+		
+		<div class="spacer-120" />
+		
+		<section class="experiences-section">
+			<div id="experiencias" class="title">
+				<span>Experiências</span>
+				<h2>Experiências</h2>
+			</div>
+			
+			<div class="spacer-60" />
+			
+			<Experiences />
+		</section>
+		
+		<div class="spacer-120" />
+		
+		<section class="contact-section">
+			<div id="contato" class="title">
+				<span>Contato</span>
+				<h2>Contato</h2>
+			</div>
+			
+			<div class="spacer-60" />
+			
+			<ContactCard />
+		</section>
+
+		<div class="spacer-120" />
+
+		<footer class="container footer">
+			<span class="footer__name">Yan Mendes 2023</span>
+			<span class="footer__caption">"Weniger, aber besser" - Dieter Rams</span>
+		</footer>
 	</main>
 </BaseLayout>
