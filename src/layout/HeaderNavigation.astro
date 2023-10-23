@@ -5,6 +5,8 @@ import DarkLightIcon from '../icons/DarkLight.astro'
 import ENlanguageIcon from '../icons/ENlanguage.astro'
 //@ts-ignore
 import PTlanguageIcon from '../icons/PTlanguage.astro'
+//@ts-ignore
+import MenuIcon from '../icons/Menu.astro'
 
 const menuItems = [
     { name: 'Programação', route: '#programacao' },
@@ -38,5 +40,15 @@ const menuItems = [
                 </a>
             </li>
         </ul>
+        <div class="mobile-menu">
+            <a id="mobile-themeButton" role="button" class="icon-link">
+                <DarkLightIcon />
+            </a>
+            <a id="languageButton" role="button" class="icon-link">
+                <ENlanguageIcon />
+                <!-- <PTlanguageIcon /> -->
+            </a>
+            <MenuIcon />
+        </div>
     </nav>
 </header>
