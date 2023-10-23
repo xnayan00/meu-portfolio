@@ -35,3 +35,12 @@
 .design :nth-child(n):hover {
     filter: grayscale(0);
 }
+
+@media screen and (max-width: 800px){
+    .design {
+        grid-template-columns: 1fr;
+    }
+    .design :nth-child(n) {
+        filter: grayscale(0);
+    }
+}

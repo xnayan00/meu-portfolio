@@ -12,6 +12,8 @@
 .hero__image {
     position: absolute;
     top: -90px;
+    left: 7%;
+    width: 33%;
     z-index: 3;
 }
 .hero__content {
@@ -46,18 +48,30 @@
         height: auto;
         justify-content: flex-start;
         align-items: flex-start;
-        padding: 0;
+        padding: 50px 0 0 0;
+        gap: 0;
     }
     .hero__social {
         display: none;
     }
     .hero__image {
+        position: static;
         top: 0;
         order: 2;
-        position: static;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .hero__content {
+        order: 1;
     }
     .hero__title {
-        order: 1;
+        margin: 0;
         font-size: 2rem;
+        line-height: normal;
+    }
+    .hero__subtitle {
+        margin: 0;
+        line-height: normal;
+        font-size: 4.37rem;
     }
 }

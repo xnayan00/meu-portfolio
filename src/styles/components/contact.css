@@ -27,7 +27,7 @@
     display: flex;
     flex-direction: column;
 }
-.contect__socials {
+.contact__socials {
     display: flex;
     flex-direction: column;
 }
@@ -62,4 +62,23 @@
 }
 :is(.contact__number, .contact__email):hover {
     color: var(--gray-400);
+}
+
+@media screen and (max-width: 800px) {
+    .contact-card {
+        flex-direction: column;
+    }
+    .contact__socials {
+        flex-direction: row;
+        gap: 20px;
+    }
+    .contact__image {
+        width: 100%;
+        height: 200px
+    }
+    .contact__info {
+        justify-content: flex-start;
+        gap: 20px;
+        height: auto;
+    }
 }

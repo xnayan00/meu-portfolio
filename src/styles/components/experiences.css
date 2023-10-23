@@ -59,3 +59,13 @@
     font-weight: 600;
     text-transform: uppercase;
 }
+
+@media screen and (max-width: 800px){
+    .experiences {
+        grid-template-columns: 1fr;
+        column-gap: 0px;
+    }
+    .card__content {
+        margin-bottom: 0;
+    }
+}

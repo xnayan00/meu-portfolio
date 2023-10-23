@@ -17,7 +17,7 @@ body {
 .logo {
     font-family: "Archivo Black";
     text-transform: uppercase;
-    padding: 0 3rem;
+    padding: 0 5rem;
 }
 .social-button {
     border: none;
@@ -27,4 +27,13 @@ body {
 }
 .icon-link {
     cursor: pointer;
+}
+figure {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px){
+    .logo {
+        padding: 0;
+    }
 }

@@ -30,3 +30,13 @@
 .title--spaced {
     top: 60px;
 }
+
+@media screen and (max-width: 860px) {
+    .title span {
+        font-size: 30px;
+        opacity: 1;
+    }
+    .title h2 {
+        display: none;
+    }
+}

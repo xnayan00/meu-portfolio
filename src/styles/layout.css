@@ -36,4 +36,18 @@ svg.svgColor {
     .wrapper {
         padding-top: 30px;
     }
+    .container {
+        max-width: 85%;
+    }
+    .spacer-250 {
+        margin: 100px 0;
+    }
+    
+    .spacer-120 {
+        margin: 90px 0;
+    }
+    
+    .spacer-60 {
+        margin: 30px 0;
+    }
 }

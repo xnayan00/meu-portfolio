@@ -12,6 +12,7 @@
 .project__footer__list {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
     padding: 0;
     gap: 20px;
     align-items: center;
@@ -41,4 +42,23 @@
     font-size: 1rem;
     line-height: 1.2rem;
     color: var(--gray-700);
+}
+
+@media screen and (max-width: 800px){
+    .project {
+        column-gap: 0px;
+        grid-template-columns: 1fr;
+    }
+    .project__footer {
+        grid-column: 1 / 2;
+    }
+    .project__image {
+        order: 1;
+    }
+    .project__content {
+        order: 2;
+    }
+    .project__footer {
+        order: 3;
+    }
 }
