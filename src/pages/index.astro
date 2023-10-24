@@ -1,6 +1,8 @@
 ---
 import BaseLayout from '../layout/BaseLayout.astro'
 //@ts-ignore
+import yanMendes from `../assets/hero-img.png`
+//@ts-ignore
 import BehanceIcon from '../icons/Behance.astro'
 //@ts-ignore
 import GithubIcon from '../icons/Github.astro'
@@ -34,7 +36,7 @@ import ContactCard from '../components/ContactCard.astro'
 				</a>
 			</div>
 			<figure class="hero__image">
-				<img src="../src/assets/hero-img.png" width="100%" alt="Foto Yan Mendes">
+				<img src={yanMendes.src} width="100%" alt="Foto Yan Mendes">
 			</figure>
 			<div class="hero__content">
 				<h2 class="hero__subtitle">Olá, eu sou</h2>
