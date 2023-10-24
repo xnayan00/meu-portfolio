@@ -11,6 +11,8 @@ import phpIcon from '/src/icons/php.vue'
 import laravelIcon from '/src/icons/laravel.vue'
 import mysqlIcon from '/src/icons/mysql.vue'
 
+import samulifeImg from './samulife1.png'
+
 const items = ref([
     { title: 'HTML', src: htmlIcon, alt: 'Ícone do HTML5' },
     { title: 'CSS', src: cssIcon, alt: 'Ícone do CSS3' },
@@ -35,7 +37,7 @@ const items = ref([
         </div>
         <div class="project__image">
             <figure>
-                <img src="/src/assets/projects/samulife1.png" width="100%" alt="Imagem do projeto Síntese">
+                <img :src="samulifeImg" style="width: 100%" alt="Imagem do projeto Samulife">
             </figure>
         </div>
         <div class="project__footer">

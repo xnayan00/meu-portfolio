@@ -10,6 +10,8 @@ import quasarIcon from '/src/icons/quasar.vue'
 import nodeIcon from '/src/icons/node.vue'
 import mongoIcon from '/src/icons/mongo.vue'
 
+import sinteseImg from './sintese1.png'
+
 const items = ref([
     { title: 'HTML', src: htmlIcon, alt: 'Ícone do HTML5' },
     { title: 'CSS', src: cssIcon, alt: 'Ícone do CSS3' },
@@ -34,7 +36,7 @@ const items = ref([
         </div>
         <div class="project__image">
             <figure>
-                <img src="/src/assets/projects/sintese1.png" width="100%" alt="Imagem do projeto Síntese">
+                <img :src="sinteseImg" style="width: 100%" alt="Imagem do projeto Síntese">
             </figure>
         </div>
         <div class="project__footer">
