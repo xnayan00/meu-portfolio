@@ -31,26 +31,32 @@ const menuItems = [
                     <DarkLightIcon />
                 </a>
             </li>
+            <!-- 
             <li>
                 <a id="languageButton" role="button" class="icon-link">
                     <ENlanguageIcon />
-                    <!-- <PTlanguageIcon /> -->
+                    <PTlanguageIcon />
                 </a>
             </li>
+             -->
         </ul>
         <div class="mobile-menu">
             <a id="mobile-themeButton" role="button" class="icon-link">
                 <DarkLightIcon />
             </a>
-            <a id="languageButton" role="button" class="icon-link">
-                <ENlanguageIcon />
-                <!-- <PTlanguageIcon /> -->
-            </a>
-            <MenuIcon />
+            <!--
+                <a id="languageButton" role="button" class="icon-link">
+                    <ENlanguageIcon />
+                    <PTlanguageIcon />
+                </a>
+            -->
+            <button id="menu-drawer-button" class="menu-button">
+                <MenuIcon />
+            </button>
         </div>
     </nav>
 
-    <nav class="drawer">
+    <nav id="mobile-nav" class="drawer">
         <ul class="drawer__menu">
             {menuItems.map(item => (
                 <li class="drawer__menu__item">

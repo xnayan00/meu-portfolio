@@ -15,6 +15,9 @@
 
 <script>
         const body = document.body
+        const drawer = document.getElementById('mobile-nav')
+        const mobileMenuItems = document.getElementsByClassName('drawer__menu__item')
+        var isOpened = false
         
         function prefersMatch(){
             if(window.matchMedia("(prefers-color-scheme: dark)").matches){
@@ -34,8 +37,28 @@
             }
         }
 
+        function toggleDrawer(){
+            if(isOpened === false){
+                drawer.style.width = '80%'
+            } else {
+                drawer.style.width = '0'
+            }
+
+            isOpened = !isOpened
+        }
+
+        function closeDrawer(){
+            isOpened = false
+            drawer.style.width = '0'
+        }
+
+        for (const item of mobileMenuItems) {
+            item.addEventListener('click', closeDrawer)
+        }
+
 		document.getElementById("themeButton").addEventListener('click', toggleTheme)
 		document.getElementById("mobile-themeButton").addEventListener('click', toggleTheme)
+		document.getElementById("menu-drawer-button").addEventListener('click', toggleDrawer)
 </script>
 
 </html>
