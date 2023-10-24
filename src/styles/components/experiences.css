@@ -10,6 +10,7 @@
 .card__border {
     background-color: var(--gray);
     padding: 18px;
+    height: 100%;
 }
 .card__header {
     display: flex;
