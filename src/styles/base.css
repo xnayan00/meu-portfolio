@@ -4,12 +4,12 @@
 body {
     margin: 0;
     padding: 0;
+    transition: all .3s;
     font-family: "Archivo", sans-serif;
 }
 
 * {
     box-sizing: border-box;
-    transition: all .3s;
     scroll-margin: 60px;
     scroll-behavior: smooth;
 }
@@ -18,7 +18,8 @@ body {
     font-family: "Archivo Black";
     text-transform: uppercase;
     padding: 0 5rem;
-    transition: all .1s;
+    color: var(--gray-700);
+    text-decoration: none;
 }
 .social-button {
     border: none;
