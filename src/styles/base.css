@@ -8,6 +8,11 @@ body {
     font-family: "Archivo", sans-serif;
 }
 
+::selection {
+    background-color: var(--gray-700);
+    color: var(--gray);
+}
+
 * {
     box-sizing: border-box;
     scroll-margin: 60px;
