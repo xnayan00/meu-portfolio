@@ -35,7 +35,7 @@ const items = ref([
         </div>
         <div class="project__image">
             <figure>
-                <img :src="sinteseImg.src" style="width: 100%" alt="Imagem do projeto Síntese">
+                <img :src="sinteseImg.src" style="width: 100%" width="100%" height="100%" alt="Imagem do projeto Síntese">
             </figure>
         </div>
         <div class="project__footer">
