@@ -9,25 +9,25 @@
     cursor: pointer;
 }
 .design :first-child {
-    background-image: url('/src/assets/click-delivery.png');
+    background-image: url('/src/assets/click-delivery.webp');
     background-size: cover;
     filter: grayscale(1);
     background-position: center;
 }
 .design :nth-child(2) {
-    background-image: url('/src/assets/wander-hub.png');
+    background-image: url('/src/assets/wander-hub.webp');
     background-size: cover;
     filter: grayscale(1);
     background-position: center;
 }
 .design :nth-child(3) {
-    background-image: url('/src/assets/fatal-beach.png');
+    background-image: url('/src/assets/fatal-beach.webp');
     background-size: cover;
     filter: grayscale(1);
     background-position: center;
 }
 .design :nth-child(4) {
-    background-image: url('/src/assets/quintal-lanches.jpg');
+    background-image: url('/src/assets/quintal-lanches.webp');
     background-size: cover;
     filter: grayscale(1);
     background-position: center;
