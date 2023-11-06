@@ -10,7 +10,7 @@
     padding: 10px 20px;
 }
 .contact__image {
-    background-image: url('/src/assets/contact-card-img.png');
+    background-image: url('/src/assets/contact-card-img.webp');
     background-size: cover;
     background-position: center;
     height: 124px;
